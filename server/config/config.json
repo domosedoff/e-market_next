@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Secretyu26061976",
+    "database": "e-market_test-bd",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306
+  },
+  "test": {
+    "username": "root",
+    "password": "Secretyu26061976",
+    "database": "e-market_test-bd",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306
+  },
+  "production": {
+    "username": "root",
+    "password": "Secretyu26061976",
+    "database": "e-market_test-bd",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306
+  }
+}

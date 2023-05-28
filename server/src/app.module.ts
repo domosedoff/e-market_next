@@ -5,6 +5,7 @@ import { databaseConfig } from 'src/config/configuration';
 import { SequelizeConfigService } from 'src/config/sequelizeConfig.service';
 import { UsersModule } from 'src/users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { IngridModule } from './ingrid/ingrid.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     UsersModule,
     AuthModule,
+    IngridModule,
   ],
 })
 export class AppModule {}
