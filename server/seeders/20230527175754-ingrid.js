@@ -2,7 +2,7 @@ const { faker } = require(`@faker-js/faker`);
 
 ('use strict');
 
-const brands = ['Германия', 'Италия', 'Польша', 'Россия'];
+const brands = ['German', 'Italy', 'Poland', 'Russia'];
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
         info1: faker.lorem.sentence(15),
         info2: faker.lorem.sentence(15),
         info3: faker.lorem.sentence(15),
-        info4: faker.lorem.sentence(15),
+        info4: faker.lorem.sentence(10),
         images: JSON.stringify(
           [...Array(7)].map(
             () => `${faker.image.url()}?ramdom=${faker.string.numeric(30)}`,

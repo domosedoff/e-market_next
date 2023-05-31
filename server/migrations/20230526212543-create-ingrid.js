@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Ingrids', {
+    await queryInterface.createTable('Ingrid', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -35,10 +35,10 @@ module.exports = {
         type: Sequelize.STRING(2048),
       },
       vendorCode: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
       },
       images: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(2048),
       },
       inStocks: {
         type: Sequelize.INTEGER,
