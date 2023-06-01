@@ -8,7 +8,7 @@ const brands = ['German', 'Italy', 'Poland', 'Russia'];
 module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert(
-      'Ingrid',
+      'Ingrids',
       [...Array(100)].map(() => ({
         brand: brands[Math.floor(Math.random() * brands.length)],
         price: faker.string.numeric(4),
@@ -35,6 +35,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('Ingrid', null, {});
+    return queryInterface.bulkDelete('Ingrids', null, {});
   },
 };
