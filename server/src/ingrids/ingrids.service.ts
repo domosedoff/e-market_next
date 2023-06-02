@@ -34,13 +34,13 @@ export class IngridsService {
     });
   }
 
-  async findOne(id: number): Promise<Ingrids> {
+  async findOne(id: number | string): Promise<Ingrids> {
     return this.ingridsModel.findOne({
       where: { id },
     });
   }
 
-  async findOneByName(id: number): Promise<Ingrids> {
+  async findOneByName(name: string): Promise<Ingrids> {
     return this.ingridsModel.findOne({
       where: { name },
     });
