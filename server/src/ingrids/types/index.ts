@@ -6,8 +6,8 @@ class Ingrids {
   @ApiProperty({ example: 1 })
   id: number;
 
-  @ApiProperty({ example: 7044 })
-  price: number;
+  @ApiProperty({ example: '7044' })
+  price: string;
 
   @ApiProperty({ example: 'Poland' })
   brand: string;

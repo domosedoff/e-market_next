@@ -6,6 +6,7 @@ import { SequelizeConfigService } from 'src/config/sequelizeConfig.service';
 import { UsersModule } from 'src/users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { IngridsModule } from './ingrids/ingrids.module';
+import { ShoppingCardModule } from './shopping-card/shopping-card.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { IngridsModule } from './ingrids/ingrids.module';
     UsersModule,
     AuthModule,
     IngridsModule,
+    ShoppingCardModule,
   ],
 })
 export class AppModule {}
